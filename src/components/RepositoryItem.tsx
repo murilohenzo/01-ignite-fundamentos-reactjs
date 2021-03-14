@@ -1,4 +1,12 @@
-const RepositoryItem = (props) => {
+interface IRepositoryItemProps {
+  repository: {
+    name?: string;
+    description: string;
+    html_url: string;
+    }
+  }
+
+const RepositoryItem = (props: IRepositoryItemProps) => {
   return (
     <>
       <li>
